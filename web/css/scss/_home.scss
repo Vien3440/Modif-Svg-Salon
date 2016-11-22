@@ -1,0 +1,74 @@
+
+
+body{
+    background-color:$color2;
+    background-image: url("https://openclipart.org/download/223538/Vintage-Floral-Wallpaper-Pattern.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+      background-size: cover; 
+
+
+    #headerHome{    /*  Img de garde  */ 
+        background: url("../images/patisseries-sobre.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+       
+    }
+
+
+    #contHome{
+        
+        background-color: $color3;
+        padding: 20px;
+       @include borderShadoow;
+       
+       
+       
+       
+        #tof{
+            background-color:$color3;
+         
+
+            div{
+              
+               position: relative;
+                text-align: center;
+           
+                width:270px;
+                margin: auto;
+                font-family: baseBold;
+                font-size: 30px;
+
+
+                img{
+                    height: 300px;
+                    position:inherit;
+                }
+
+            }
+        }
+    }
+
+    #text{
+/*        background-color:$color1;*/
+             
+        div{
+           text-align: center;
+       
+               
+                font-family: baseBold;
+                font-size: 30px;
+                  p{ 
+/*                    background-color: $color1;*/
+                    font-family: baseBold;
+                    font-size: 30px;
+                }       :last-child{ font-family: base; }   
+            
+            
+        }
+
+    }
+
+}
+

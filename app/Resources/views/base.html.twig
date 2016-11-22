@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    {% block head %}
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <title>{% block title %}L'Eldorado Modif{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('../vendor/twbs/bootstrap/dist/css/bootstrap.min.css')}}"> {# Import Bootstrap(Composeur#}
+        <link rel="stylesheet" href="{{ asset('../vendor/fortawesome/font-awesome/css/font-awesome.min.css')}}"> {# Import Font-Awesome(Composeur#}
+        <link rel="stylesheet" href="{{ asset('./css/main.css')}}"> 
+    {% block stylesheets %}{% endblock %}
+{% endblock %}  
+<body>
+    {% block body %}
+        {% block nav %}
+            {# Nav bar par default #}
+            <nav class="nav1 navbar navbar-default navbar-fixed-top">
+                <button type="button" class="navbar-toggle icon-bar fa fa-bars" data-toggle="collapse" id="inputResponsive" data-target="#myNavbar">
+
+                </button>
+                <header class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="{{path('salon')}}">Bar Salon</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{path('resto')}}">Restauration</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{path('conta')}}">Contact</a></li>
+                        {% if is_granted("ROLE_ADMIN") %}
+                            <li class="nav-item"><a class="nav-link" href="{{path('loginOut')}}">Logout</a></li>
+                            <br><li class="nav-item"><a class="nav-link" href="{{path('adminSalon')}}">Admin Bar Salon</a></li>
+                          {#  <li class="nav-item"><a class="nav-link" href="">Admin Patisserie</a></li>#}
+                            <li class="nav-item"><a class="nav-link" href="{{path('adminResto')}}">Admin Restauration</a></li>
+                            {% else %}
+                            <li class="nav-item"><a class="nav-link" href="{{path('login')}}">Login</a></li>
+                            {% endif %}
+
+                    </ul>
+                </header>
+                {% if is_granted("ROLE_ADMIN") == false %}
+                    <ul class="contact">
+                        <a class="nav-link" href="{{path('home')}}"><img id="logo" src="./../images/large_fun-in-the-sun-title.png" alt="logo"></a>
+                        <li><span class="fa fa-phone"></span> 0612345678</li>
+                        <li><span class="fa fa-street-view"></span>  Rue de la paix</li>
+                    </ul>
+                {% endif %}
+            </nav>
+
+
+        {% endblock %}
+
+        <script type="text/javascript" src="{{asset('../vendor/twbs/bootstrap/js/tests/vendor/jquery.min.js')}}"></script> {# Import jquery(Composeur#}
+        <script type="text/javascript" src="{{asset('../vendor/twbs/bootstrap/dist/js/bootstrap.min.js')}}"></script> {# Import BootstrapJs(Composeur#}
+        <script type="text/javascript" src="{{asset('./js/scriptNav.js')}}"></script>  
+    {% block corp %}{% endblock %} {# Contenue changent  #}
+
+{% endblock %}
+
+</body>
+</html>

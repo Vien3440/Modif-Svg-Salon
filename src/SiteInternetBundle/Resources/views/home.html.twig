@@ -1,0 +1,30 @@
+{%extends "base.html.twig"%}
+
+
+{% block head %}{{parent()}}{% endblock %}
+
+{% block body %}{{parent()}}{% endblock %}
+
+{% block corp %}
+    <header id='headerHome'></header> 
+    <section id="contHome" class='container'>
+        
+        <div id="tof" class="col-lg-6 col-md-6 " >
+            <div id="contantTof">
+                <h2>M dupont </h2>
+                <img src="{{asset("/images/Profil.jpg")}}" class="img-thumbnail" alt="Photo M " width="270" height="300">
+            </div>            
+        </div>
+        <div id="text" class="col-lg-6 col-md-6 " >
+            <div id="contantText">
+                <p>Au cœur de lunel</p> <sapn> 
+ <p>Au centre historique de la ville de lunel 
+C’est en xxxx que Mxxx ouvrent le restaurant / salon de the L’eldorado . Niché au cœur du village de Lunel , l’endroit se veut intimiste et rencontre un succès immédiat en proposant divers met marocaine ou européenne basée sur des recette simples et conviviaux.</p>
+            </div>
+        </div>
+        
+
+</section>
+    <script type="text/javascript" src="{{asset('./js/scriptHome.js')}}"></script> 
+{% endblock %}
+

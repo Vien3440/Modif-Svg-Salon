@@ -1,0 +1,29 @@
+{% extends "base.html.twig" %}
+
+
+{% block body %}{{parent()}}{% endblock %}
+    
+    
+    {% block corp %}
+        <div class="container admiSalon">
+        <h2 id="admiSalon">Liste des Plats</h2>
+        <a href="{{ path('adminRestoAdd')}}" class="btn btn-default col-xs-offset-3 col-xs-6 col-xs-offset-3" role="button"> Ajouter </a>
+        </div>
+        <div id="container">
+            
+        {% for Resto in resto %}
+            <div class="col-sm-6 col-lg-4 col-md-4">
+         <div class="thumbnail">
+             <img src="{{asset('../web/images/')~Resto.Photo}}">
+           <h3>{{Resto.Nom}}</h3>
+           <p>{{Resto.Prix}}€</p>
+           <p>{{Resto.Type}}</p>
+           <div>
+               <a href="{{ path('editResto',{'id':Resto.id})}}" class="btn btn-success" role="button">Modifier</a>
+               <a href=" {{ path('suprResto', {'id':Resto.id})}}" class="btn btn-danger" role="button">Supprimer</a>
+           </div>
+         </div>
+        </div>
+    </div>       
+        {% endfor %}
+    {% endblock %}

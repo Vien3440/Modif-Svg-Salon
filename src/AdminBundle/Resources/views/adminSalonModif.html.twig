@@ -1,0 +1,46 @@
+{% extends "base.html.twig" %}
+
+
+{% block body %}{{parent()}}{% endblock %}
+    {% block nav %}{% endblock %}
+    
+    {% block corp %}
+ <h1 class="lienajout headerForm">Modification Cocktail / Thé</h1>
+                 <div class="col-lg-offset-2 col-lg-8 col-lg-offset-2 col-sm-offset-1 col-sm-10 col-sm-offset-1 ">
+
+       
+        
+     {{form_start(formSalon,{'attr':{'action':path('modifSalon',{'id':id})}})}}
+     
+     
+        <div class="">
+                {#////// Nom  #}  
+                <div class="input-group formEvent">
+                    <span class="input-group-addon" >Nom</span>
+                    {{ form_widget(formSalon.nom, { 'attr': {'class': 'form-control'} })}} {# Class Botstrap #}
+                </div>
+                {#////// Prix  #} 
+                <div class="input-group formEvent">
+                    <span class="input-group-addon" >Prix</span>
+                    {{ form_widget(formSalon.prix, { 'attr': {'class': 'form-control'} })}}
+                </div>
+                {#////// Photo  #} 
+                <div class="input-group formEvent">
+                    <span class="input-group-addon" >Photo</span>
+                    {{ form_widget(formSalon.photo, { 'attr': {'class': 'form-control'} })}}
+                </div>
+                {#////// Description  #}
+                <div class="input-group formEvent">
+                    <span class="input-group-addon" >Description</span>
+                    {{ form_widget(formSalon.type, { 'attr': {'class': 'form-control'} })}}
+                </div>
+                {#////// Valider  #}
+                {{ form_widget(formSalon.Valider, { 'attr': {'class': 'form-control btn-success'} })}}
+                 </div>
+     {{form_end(formSalon)}}
+     <div>
+      <a href="{{ path('adminSalon')}}" class="btn btn-danger col-xs-offset-3 col-xs-6 col-xs-offset-3" role="button"> Retour </a>
+     </div>     
+           
+  
+     {% endblock %}

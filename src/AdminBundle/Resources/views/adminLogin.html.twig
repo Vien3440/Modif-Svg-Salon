@@ -1,0 +1,26 @@
+{% extends "base.html.twig" %}
+
+{% block body %}{{parent()}}{% endblock %}
+
+{% block corp %}
+
+    {% if is_granted("ROLE_ADMIN") %}
+
+        
+    {% else %}
+    
+        
+        <div class="login">
+  <div class="login-triangle"></div>
+  
+  <h2 class="login-header">Bienvenue</h2>   
+            <form action="{{path('loginCheck')}}" method="post">
+                <input type="text" id="username" name="_username" placeholder="Nom d'utilisateur" value=""/>
+                <input type="password" id="password" name="_password" placeholder="Mot de passe" value=""/>
+                <input type="submit" value="se connecter"/>
+            </form>
+        </div>
+       
+    
+            {% endif %}
+{% endblock %}
