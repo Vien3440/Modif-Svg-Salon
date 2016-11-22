@@ -6,13 +6,17 @@
 {% block body %}{{parent()}}{% endblock %}
 
 {% block corp %}
-    <header id='headerHome'></header> 
+    <header id='headerHome'>
+        <div id="blockLogo">
+            <img class="img-responsive" alt="logo eldorado"  src="../images/fullLogo4.png" >
+        </div>
+    </header> 
     <section id="contHome" class='container'>
         
         <div id="tof" class="col-lg-6 col-md-6 " >
-            <div id="contantTof">
+            <div  id="contantTof">
                 <h2>M dupont </h2>
-                <img src="{{asset("/images/Profil.jpg")}}" class="img-thumbnail" alt="Photo M " width="270" height="300">
+                <img src="{{asset("/images/Profil.jpg")}}" class=" img-thumbnail" alt="Photo M " width="270" height="300">
             </div>            
         </div>
         <div id="text" class="col-lg-6 col-md-6 " >

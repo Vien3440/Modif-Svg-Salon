@@ -9,7 +9,7 @@
         <h2 id="admiSalon">Liste des Plats</h2>
         <a href="{{ path('adminRestoAdd')}}" class="btn btn-default col-xs-offset-3 col-xs-6 col-xs-offset-3" role="button"> Ajouter </a>
         </div>
-        <div id="container">
+        <div class="container-fluid adminEdit">
             
         {% for Resto in resto %}
             <div class="col-sm-6 col-lg-4 col-md-4">
@@ -24,6 +24,6 @@
            </div>
          </div>
         </div>
-    </div>       
         {% endfor %}
+        </div>
     {% endblock %}

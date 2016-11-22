@@ -9,7 +9,7 @@
         <h2 >Liste des cocktails/Thé</h2>
         <a href="{{ path('adminSalonAdd')}}" class="btn btn-default col-xs-offset-3 col-xs-6 col-xs-offset-3" role="button"> Ajouter </a>
         </div>
-        <div id="container">
+        <div class="container-fluid adminEdit">
             
             
         {% for Salon in salons %}
@@ -26,6 +26,7 @@
         </div>
         </div>
         
-        </div>
+        
         {% endfor %}
+        </div>
     {% endblock %}

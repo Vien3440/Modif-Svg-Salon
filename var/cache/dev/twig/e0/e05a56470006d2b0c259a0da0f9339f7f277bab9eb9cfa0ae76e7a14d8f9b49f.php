@@ -23,47 +23,47 @@ class __TwigTemplate_29bd4903a936f70b0924f6ddad60423c10589ec54671a42f726d68d6f4b
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_63a0f2806ca25cfe04d8ddec72a4d3733654f564849e6861e84c3f7b4824a62c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_63a0f2806ca25cfe04d8ddec72a4d3733654f564849e6861e84c3f7b4824a62c->enter($__internal_63a0f2806ca25cfe04d8ddec72a4d3733654f564849e6861e84c3f7b4824a62c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SiteInternetBundle::salondethe.html.twig"));
+        $__internal_5dd0bff91d20511263b7c64f1a36f336d618ebd0cad1763e3471af8dc293835e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_5dd0bff91d20511263b7c64f1a36f336d618ebd0cad1763e3471af8dc293835e->enter($__internal_5dd0bff91d20511263b7c64f1a36f336d618ebd0cad1763e3471af8dc293835e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SiteInternetBundle::salondethe.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_63a0f2806ca25cfe04d8ddec72a4d3733654f564849e6861e84c3f7b4824a62c->leave($__internal_63a0f2806ca25cfe04d8ddec72a4d3733654f564849e6861e84c3f7b4824a62c_prof);
+        $__internal_5dd0bff91d20511263b7c64f1a36f336d618ebd0cad1763e3471af8dc293835e->leave($__internal_5dd0bff91d20511263b7c64f1a36f336d618ebd0cad1763e3471af8dc293835e_prof);
 
     }
 
     // line 4
     public function block_head($context, array $blocks = array())
     {
-        $__internal_748cd14ccc30fd6721ab75c67bb6a8020f056154b970f01a1845135dc9f1d31a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_748cd14ccc30fd6721ab75c67bb6a8020f056154b970f01a1845135dc9f1d31a->enter($__internal_748cd14ccc30fd6721ab75c67bb6a8020f056154b970f01a1845135dc9f1d31a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "head"));
+        $__internal_2d5ca656e5ffa1b98f32abaa593ad7e77dd248680b5df67578a2f39bc65d569a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_2d5ca656e5ffa1b98f32abaa593ad7e77dd248680b5df67578a2f39bc65d569a->enter($__internal_2d5ca656e5ffa1b98f32abaa593ad7e77dd248680b5df67578a2f39bc65d569a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "head"));
 
         $this->displayParentBlock("head", $context, $blocks);
         
-        $__internal_748cd14ccc30fd6721ab75c67bb6a8020f056154b970f01a1845135dc9f1d31a->leave($__internal_748cd14ccc30fd6721ab75c67bb6a8020f056154b970f01a1845135dc9f1d31a_prof);
+        $__internal_2d5ca656e5ffa1b98f32abaa593ad7e77dd248680b5df67578a2f39bc65d569a->leave($__internal_2d5ca656e5ffa1b98f32abaa593ad7e77dd248680b5df67578a2f39bc65d569a_prof);
 
     }
 
     // line 6
     public function block_body($context, array $blocks = array())
     {
-        $__internal_58df95c5a649cdf2453cb5cb374c36c6799ddaa28d7e60aa2cc23fe24c85dba6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_58df95c5a649cdf2453cb5cb374c36c6799ddaa28d7e60aa2cc23fe24c85dba6->enter($__internal_58df95c5a649cdf2453cb5cb374c36c6799ddaa28d7e60aa2cc23fe24c85dba6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_44ec007f4bb2628e8d99d998af49f0bb45d1aa9a736e5ca2f9c1d93aae66b97f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_44ec007f4bb2628e8d99d998af49f0bb45d1aa9a736e5ca2f9c1d93aae66b97f->enter($__internal_44ec007f4bb2628e8d99d998af49f0bb45d1aa9a736e5ca2f9c1d93aae66b97f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         $this->displayParentBlock("body", $context, $blocks);
         
-        $__internal_58df95c5a649cdf2453cb5cb374c36c6799ddaa28d7e60aa2cc23fe24c85dba6->leave($__internal_58df95c5a649cdf2453cb5cb374c36c6799ddaa28d7e60aa2cc23fe24c85dba6_prof);
+        $__internal_44ec007f4bb2628e8d99d998af49f0bb45d1aa9a736e5ca2f9c1d93aae66b97f->leave($__internal_44ec007f4bb2628e8d99d998af49f0bb45d1aa9a736e5ca2f9c1d93aae66b97f_prof);
 
     }
 
     // line 8
     public function block_corp($context, array $blocks = array())
     {
-        $__internal_f662cf49bf9096abd03421ce56277e318d34c2ef64f1e436726ff702c63ca81f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f662cf49bf9096abd03421ce56277e318d34c2ef64f1e436726ff702c63ca81f->enter($__internal_f662cf49bf9096abd03421ce56277e318d34c2ef64f1e436726ff702c63ca81f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "corp"));
+        $__internal_0439428deb0a4968966008f13e0f5db12bf478064a959b696346f12920b7c773 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_0439428deb0a4968966008f13e0f5db12bf478064a959b696346f12920b7c773->enter($__internal_0439428deb0a4968966008f13e0f5db12bf478064a959b696346f12920b7c773_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "corp"));
 
         // line 9
-        echo "    <div id=\"contSalon\" class=\"container-fluid\">
+        echo "    <div id=\"contSalon\" class=\"carouzel container-fluid\">
         <div id=\"carousel-example-generic\" class=\"carousel slide\" data-ride=\"carousel\">
   <!-- Indicators -->
   <ol class=\"carousel-indicators\">
@@ -76,11 +76,11 @@ class __TwigTemplate_29bd4903a936f70b0924f6ddad60423c10589ec54671a42f726d68d6f4b
   <!-- Wrapper for slides -->
   <div class=\"carousel-inner\" role=\"listbox\">
     <div class=\"item active\">
-      <img src=\"../images/Salon2.png\" alt=\"logo\" alt=\"...\">
+      <img src=\"../images/salon3.png\" alt=\"logo\" alt=\"...\">
       
     </div>
     <div class=\"item\">
-      <img src=\"../images/salon1.png\" alt=\"logo\" alt=\"...\">
+      <img src=\"../images/salon4.png\" alt=\"logo\" alt=\"...\">
       
     </div>
     
@@ -97,32 +97,33 @@ class __TwigTemplate_29bd4903a936f70b0924f6ddad60423c10589ec54671a42f726d68d6f4b
   </a>
 </div>
     </div>
-    <div class=\"container\" id=\"containerSalon\">
-        <div class=\"row\">
+    <div class=\"container form\" id=\"containerSalon\">
+        
     ";
         // line 45
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["poste"] ?? $this->getContext($context, "poste")));
         foreach ($context['_seq'] as $context["_key"] => $context["Salon"]) {
             // line 46
-            echo "        <div id=\"thumbnailSalon\">
+            echo "        
+        <div id=\"thumbnailSalon\">
        <div class=\"col-lg-3 col-md-3\" >
     <div class=\"thumbnail\">
-    <img src=\"";
-            // line 49
+        <a class=\"hvr-curl-top-left\"><img src=\"";
+            // line 50
             echo twig_escape_filter($this->env, ($this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("images/") . $this->getAttribute($context["Salon"], "Photo", array())), "html", null, true);
-            echo "\">
+            echo "\"></a>
       <div class=\"caption\">
         <h3>";
-            // line 51
+            // line 52
             echo twig_escape_filter($this->env, $this->getAttribute($context["Salon"], "Nom", array()), "html", null, true);
             echo "</h3>
         <p>";
-            // line 52
+            // line 53
             echo twig_escape_filter($this->env, $this->getAttribute($context["Salon"], "Prix", array()), "html", null, true);
             echo "€</p>
         <p>";
-            // line 53
+            // line 54
             echo twig_escape_filter($this->env, $this->getAttribute($context["Salon"], "Type", array()), "html", null, true);
             echo "</p>
        
@@ -136,12 +137,12 @@ class __TwigTemplate_29bd4903a936f70b0924f6ddad60423c10589ec54671a42f726d68d6f4b
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['Salon'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 61
-        echo "</div>
+        // line 62
+        echo "
 </div>
 ";
         
-        $__internal_f662cf49bf9096abd03421ce56277e318d34c2ef64f1e436726ff702c63ca81f->leave($__internal_f662cf49bf9096abd03421ce56277e318d34c2ef64f1e436726ff702c63ca81f_prof);
+        $__internal_0439428deb0a4968966008f13e0f5db12bf478064a959b696346f12920b7c773->leave($__internal_0439428deb0a4968966008f13e0f5db12bf478064a959b696346f12920b7c773_prof);
 
     }
 
@@ -157,7 +158,7 @@ class __TwigTemplate_29bd4903a936f70b0924f6ddad60423c10589ec54671a42f726d68d6f4b
 
     public function getDebugInfo()
     {
-        return array (  140 => 61,  126 => 53,  122 => 52,  118 => 51,  113 => 49,  108 => 46,  104 => 45,  74 => 17,  66 => 9,  60 => 8,  48 => 6,  36 => 4,  11 => 1,);
+        return array (  141 => 62,  127 => 54,  123 => 53,  119 => 52,  114 => 50,  108 => 46,  104 => 45,  74 => 17,  66 => 9,  60 => 8,  48 => 6,  36 => 4,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -178,7 +179,7 @@ class __TwigTemplate_29bd4903a936f70b0924f6ddad60423c10589ec54671a42f726d68d6f4b
 {% block body %}{{parent()}}{% endblock %}
 
 {% block corp %}
-    <div id=\"contSalon\" class=\"container-fluid\">
+    <div id=\"contSalon\" class=\"carouzel container-fluid\">
         <div id=\"carousel-example-generic\" class=\"carousel slide\" data-ride=\"carousel\">
   <!-- Indicators -->
   <ol class=\"carousel-indicators\">
@@ -191,11 +192,11 @@ class __TwigTemplate_29bd4903a936f70b0924f6ddad60423c10589ec54671a42f726d68d6f4b
   <!-- Wrapper for slides -->
   <div class=\"carousel-inner\" role=\"listbox\">
     <div class=\"item active\">
-      <img src=\"../images/Salon2.png\" alt=\"logo\" alt=\"...\">
+      <img src=\"../images/salon3.png\" alt=\"logo\" alt=\"...\">
       
     </div>
     <div class=\"item\">
-      <img src=\"../images/salon1.png\" alt=\"logo\" alt=\"...\">
+      <img src=\"../images/salon4.png\" alt=\"logo\" alt=\"...\">
       
     </div>
     
@@ -212,13 +213,14 @@ class __TwigTemplate_29bd4903a936f70b0924f6ddad60423c10589ec54671a42f726d68d6f4b
   </a>
 </div>
     </div>
-    <div class=\"container\" id=\"containerSalon\">
-        <div class=\"row\">
+    <div class=\"container form\" id=\"containerSalon\">
+        
     {% for Salon in poste %}
+        
         <div id=\"thumbnailSalon\">
        <div class=\"col-lg-3 col-md-3\" >
     <div class=\"thumbnail\">
-    <img src=\"{{asset('images/')~Salon.Photo}}\">
+        <a class=\"hvr-curl-top-left\"><img src=\"{{asset('images/')~Salon.Photo}}\"></a>
       <div class=\"caption\">
         <h3>{{Salon.Nom}}</h3>
         <p>{{Salon.Prix}}€</p>
@@ -230,7 +232,7 @@ class __TwigTemplate_29bd4903a936f70b0924f6ddad60423c10589ec54671a42f726d68d6f4b
         </div> 
     
     {% endfor %}
-</div>
+
 </div>
 {% endblock %}
 

@@ -8,58 +8,58 @@
 {% block corp %}
     <div class="container">
         <h2 class="headerForm">Contact</h2>
-       
-        <div class="col-lg-12 ">
-             <form action="{{path('conta')}}" method="post" class="col-sm-offset-2 col-sm-8">
-                            <div class="input-group">
-                            <span class="input-group-addon">Nom</span>
-                            <p><input type="input" name="nom" class="form-control"></p>
-                            </div>
-                            <div class="input-group">
-                            <span class="input-group-addon">Email</span>
-                            <p><input type="input" name="email"class="form-control" ></p>
-                            </div>
-                            <div class="input-group">
-                            <span class="input-group-addon">En quoi puis-je vous être utile</span>
-                            <p><textarea type="textarea" name="corp" class="form-control"> </textarea></p>
-                            </div>
-                            <p><input type="submit" class="btn btn-default btn-success col-xs-12" value="Envoyer"></p>
-                        </form>
-                            <div>
-                            <a href="{{ path('home')}}" class="btn btn-danger col-xs-offset-3 col-xs-6 col-xs-offset-3" role="button"> Retour </a>
-                            </div>
+        <div class="container-fluid form">
+            <div class="col-lg-12 ">
+                <form action="{{path('conta')}}" method="post" class="col-sm-offset-2 col-sm-8">
+                    <div class="input-group">
+                        <span class="input-group-addon">Nom</span>
+                        <p><input type="input" name="nom" class="form-control"></p>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">Email</span>
+                        <p><input type="input" name="email"class="form-control" ></p>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">Message</span>
+                        <p><textarea type="textarea" name="corp" class="form-control"> </textarea></p>
+                    </div>
+                    <p><input type="submit" class="btn btn-default btn-success col-xs-12" value="Envoyer"></p>
+                </form>
+                <div>
+                    <a href="{{ path('home')}}" class="btn btn-danger col-xs-offset-3 col-xs-6 col-xs-offset-3" role="button"> Retour </a>
+                </div>
+            </div>
+
+
+
+            <div class="container logo col-xs-12 " >
+
+                <div class="col-sm-3 ">
+                    <a href="https://www.facebook.com/" class="thumbnail twit">
+                        <img src="{{asset('./images/facebookLogo.png')}}" height="70" width="70" alt="logoFacebook">
+                    </a>
+                </div>
+                <div class="col-sm-3 ">
+                    <a href="https://www.tripadvisor.fr/" class="thumbnail fb ">
+                        <img src="{{asset('./images/tripadvisorLogo.png')}}" height="70" width="70" alt="logoTripadvisor">
+                    </a>
+                </div>
+                <div class="col-sm-3 ">
+                    <a href="https://www.instagram.com/" class="thumbnail linke">
+                        <img src="{{asset('./images/instaLogo.png')}}" height="70" width="70" alt="logoInstagram">
+                    </a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="https://plus.google.com/" class="thumbnail gmail">
+                        <img src="{{asset('./images/googelPlus.png')}}" height="70" width="70" alt="logoGoogelPlus">
+                    </a>
+                </div>
+
+            </div>
         </div>
+
+
+
     </div>
-            
-                
 
-                     <div class="container  col-sm-offset-4 col-sm-4 " >
-                         
-                         <div class="col-sm-6 ">
-                             <a href="https://www.facebook.com/" class="thumbnail twit">
-                                 <img src="{{asset('./images/facebookLogo.png')}}" height="60" width="60" alt="logoFacebook">
-                             </a>
-                         </div>
-                         <div class="col-sm-6 ">
-                             <a href="https://www.tripadvisor.fr/" class="thumbnail fb ">
-                                 <img src="{{asset('./images/tripadvisorLogo.png')}}" height="60" width="60" alt="logoTripadvisor">
-                             </a>
-                         </div>
-                         <div class="col-sm-6 ">
-                             <a href="https://www.instagram.com/" class="thumbnail linke">
-                                 <img src="{{asset('./images/instaLogo.png')}}" height="60" width="60" alt="logoInstagram">
-                             </a>
-                         </div>
-                         <div class="col-sm-6 ">
-                             <a href="https://plus.google.com/" class="thumbnail gmail">
-                                 <img src="{{asset('./images/googelPlus.png')}}" height="60" width="60" alt="logoGoogelPlus">
-                             </a>
-                         </div>
-                             
-                     </div>
-                     
-
-                
-                            </div>
-                            
-                            {%endblock%}
+{%endblock%}

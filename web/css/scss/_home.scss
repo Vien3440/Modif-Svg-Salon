@@ -1,11 +1,13 @@
 
 
 body{
-    background-color:$color2;
+    @media screen and (min-width: 1440px){
     background-image: url("https://openclipart.org/download/223538/Vintage-Floral-Wallpaper-Pattern.svg");
     background-repeat: no-repeat;
     background-position: center;
-      background-size: cover; 
+    background-size: cover;
+    }
+    background-color:$color2;
 
 
     #headerHome{    /*  Img de garde  */ 

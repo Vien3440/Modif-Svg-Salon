@@ -1,4 +1,10 @@
 /*fourtout*/
+.container-fluid.form{
+    @include background-colo-Rgba;
+    padding: 50px;
+
+}
+
 .textCenter{
     text-align: center
 }
@@ -6,8 +12,27 @@
 /*Titre*/
 
 .headerForm{
+    @include background-colo-Rgba;
     text-align: center;
     font-family: baseBold;
+    margin: 0px;
     margin-top: 10%;
+
+
 }
 
+
+/*Img logo */
+.container.logo{
+    margin-top:10px;
+    div{
+       
+            a.thumbnail{
+                margin: 0px;
+                padding: 0px;
+                background-color: rgba(255, 255, 255, 0);
+                border: 1px solid rgba(221, 221, 221, 0);
+            }
+       
+    }
+}

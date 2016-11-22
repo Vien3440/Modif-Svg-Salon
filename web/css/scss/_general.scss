@@ -7,6 +7,10 @@ $color3:#fa482e;
 
 $color4:#097168;
 
+@mixin background-colo-Rgba {
+    background-color: rgba(245, 245, 220, 0.81);
+}
+
 /*____________________________Fonts_______________________________*/
 @font-face {
     font-family: base;

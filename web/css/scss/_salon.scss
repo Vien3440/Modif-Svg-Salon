@@ -1,7 +1,15 @@
 /*carousel*/
 #containerSalon{ 
     margin-top: 70px;
+   
+    padding-top: 30px;
+       @include background-colo-Rgba;
 }
+
+.carouzel.container-fluid{
+    padding:0px;
+}
+
 /*carouselThumbnail*/
 #contSalon{
        margin-top: 170px;
