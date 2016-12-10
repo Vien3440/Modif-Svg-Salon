@@ -3473,7 +3473,7 @@ $this->matchAttribute($k, $v);
 }
 public function matchScheme($scheme)
 {
-$this->schemes = array_map('strtolower', (array) $scheme);
+$this->schemes = null !== $scheme ? array_map('strtolower', (array) $scheme) : array();
 }
 public function matchHost($regexp)
 {
@@ -3489,11 +3489,11 @@ $this->matchIps($ip);
 }
 public function matchIps($ips)
 {
-$this->ips = (array) $ips;
+$this->ips = null !== $ips ? (array) $ips : array();
 }
 public function matchMethod($method)
 {
-$this->methods = array_map('strtoupper', (array) $method);
+$this->methods = null !== $method ? array_map('strtoupper', (array) $method) : array();
 }
 public function matchAttribute($key, $regexp)
 {
@@ -3501,10 +3501,10 @@ $this->attributes[$key] = $regexp;
 }
 public function matches(Request $request)
 {
-if ($this->schemes && !in_array($request->getScheme(), $this->schemes)) {
+if ($this->schemes && !in_array($request->getScheme(), $this->schemes, true)) {
 return false;
 }
-if ($this->methods && !in_array($request->getMethod(), $this->methods)) {
+if ($this->methods && !in_array($request->getMethod(), $this->methods, true)) {
 return false;
 }
 foreach ($this->attributes as $key => $pattern) {

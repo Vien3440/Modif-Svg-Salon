@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.root_dir">/var/www/html/Salon-modif/app</parameter>
+    <parameter key="kernel.root_dir">/var/www/html/Modif/app</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.debug">true</parameter>
     <parameter key="kernel.name">app</parameter>
-    <parameter key="kernel.cache_dir">/var/www/html/Salon-modif/var/cache/dev</parameter>
-    <parameter key="kernel.logs_dir">/var/www/html/Salon-modif/var/logs</parameter>
+    <parameter key="kernel.cache_dir">/var/www/html/Modif/var/cache/dev</parameter>
+    <parameter key="kernel.logs_dir">/var/www/html/Modif/var/logs</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="SecurityBundle">Symfony\Bundle\SecurityBundle\SecurityBundle</parameter>
@@ -28,7 +28,7 @@
     <parameter key="database_port">null</parameter>
     <parameter key="database_name">salon_the</parameter>
     <parameter key="database_user">root</parameter>
-    <parameter key="database_password">root</parameter>
+    <parameter key="database_password">null</parameter>
     <parameter key="mailer_transport">smtp</parameter>
     <parameter key="mailer_host">127.0.0.1</parameter>
     <parameter key="mailer_user">null</parameter>
@@ -47,7 +47,7 @@
       <parameter key="cookie_httponly">true</parameter>
       <parameter key="gc_probability">1</parameter>
     </parameter>
-    <parameter key="session.save_path">/var/www/html/Salon-modif/app/../var/sessions/dev</parameter>
+    <parameter key="session.save_path">/var/www/html/Modif/app/../var/sessions/dev</parameter>
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
@@ -60,7 +60,7 @@
     <parameter key="validator.translation_domain">validators</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_master_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:/var/www/html/Salon-modif/var/cache/dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:/var/www/html/Modif/var/cache/dev/profiler</parameter>
     <parameter key="router.options.generator_class">Symfony\Component\Routing\Generator\UrlGenerator</parameter>
     <parameter key="router.options.generator_base_class">Symfony\Component\Routing\Generator\UrlGenerator</parameter>
     <parameter key="router.options.generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\PhpGeneratorDumper</parameter>
@@ -72,12 +72,12 @@
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
-    <parameter key="router.resource">/var/www/html/Salon-modif/app/config/routing_dev.yml</parameter>
+    <parameter key="router.resource">/var/www/html/Modif/app/config/routing_dev.yml</parameter>
     <parameter key="router.cache_class_prefix">appDevDebugProjectContainer</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">/var/www/html/Salon-modif/var/cache/dev/appDevDebugProjectContainer.xml</parameter>
+    <parameter key="debug.container.dump">/var/www/html/Modif/var/cache/dev/appDevDebugProjectContainer.xml</parameter>
     <parameter key="security.authentication.trust_resolver.anonymous_class">Symfony\Component\Security\Core\Authentication\Token\AnonymousToken</parameter>
     <parameter key="security.authentication.trust_resolver.rememberme_class">Symfony\Component\Security\Core\Authentication\Token\RememberMeToken</parameter>
     <parameter key="security.role_hierarchy.roles" type="collection"/>
@@ -174,7 +174,7 @@
     <parameter key="swiftmailer.mailer.default.transport.smtp.timeout">30</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.source_ip">null</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.local_domain">null</parameter>
-    <parameter key="swiftmailer.spool.default.memory.path">/var/www/html/Salon-modif/var/cache/dev/swiftmailer/spool/default</parameter>
+    <parameter key="swiftmailer.spool.default.memory.path">/var/www/html/Modif/var/cache/dev/swiftmailer/spool/default</parameter>
     <parameter key="swiftmailer.mailer.default.spool.enabled">true</parameter>
     <parameter key="swiftmailer.mailer.default.plugin.impersonate">null</parameter>
     <parameter key="swiftmailer.mailer.default.single_address">null</parameter>
@@ -292,7 +292,7 @@
     <parameter key="doctrine.orm.second_level_cache.cache_configuration.class">Doctrine\ORM\Cache\CacheConfiguration</parameter>
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
-    <parameter key="doctrine.orm.proxy_dir">/var/www/html/Salon-modif/var/cache/dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">/var/www/html/Modif/var/cache/dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="sensio_framework_extra.view.guesser.class">Sensio\Bundle\FrameworkExtraBundle\Templating\TemplateGuesser</parameter>
     <parameter key="sensio_framework_extra.controller.listener.class">Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener</parameter>
@@ -415,7 +415,7 @@
               <service class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplateFinder" public="false">
                 <argument type="service" id="kernel"/>
                 <argument type="service" id="templating.filename_parser"/>
-                <argument>/var/www/html/Salon-modif/app/Resources</argument>
+                <argument>/var/www/html/Modif/app/Resources</argument>
               </service>
             </argument>
             <argument type="service" id="templating.locator"/>
@@ -442,7 +442,7 @@
               <service class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplateFinder" public="false">
                 <argument type="service" id="kernel"/>
                 <argument type="service" id="templating.filename_parser"/>
-                <argument>/var/www/html/Salon-modif/app/Resources</argument>
+                <argument>/var/www/html/Modif/app/Resources</argument>
               </service>
             </argument>
             <argument type="collection"/>
@@ -455,7 +455,7 @@
             <argument type="service">
               <service class="Symfony\Bundle\TwigBundle\TemplateIterator" public="false">
                 <argument type="service" id="kernel"/>
-                <argument>/var/www/html/Salon-modif/app</argument>
+                <argument>/var/www/html/Modif/app</argument>
                 <argument type="collection"/>
               </service>
             </argument>
@@ -487,10 +487,10 @@
               <argument type="service">
                 <service class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
                   <tag name="cache.pool"/>
-                  <argument>0C-RTQVkiZ</argument>
+                  <argument>mclbvBDGd4</argument>
                   <argument>0</argument>
-                  <argument>2LB0TQQHYHdLaNUIbT-fRQ</argument>
-                  <argument>/var/www/html/Salon-modif/var/cache/dev/pools</argument>
+                  <argument>UYVrEg6NQ+BPgNBbTRcQOp</argument>
+                  <argument>/var/www/html/Modif/var/cache/dev/pools</argument>
                   <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                   <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
                 </service>
@@ -500,10 +500,10 @@
               <argument type="service">
                 <service class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
                   <tag name="cache.pool"/>
-                  <argument>pLBlu96FcC</argument>
+                  <argument>00jbztT2yI</argument>
                   <argument>0</argument>
-                  <argument>2LB0TQQHYHdLaNUIbT-fRQ</argument>
-                  <argument>/var/www/html/Salon-modif/var/cache/dev/pools</argument>
+                  <argument>UYVrEg6NQ+BPgNBbTRcQOp</argument>
+                  <argument>/var/www/html/Modif/var/cache/dev/pools</argument>
                   <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                   <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
                 </service>
@@ -521,7 +521,7 @@
     <service id="filesystem" class="Symfony\Component\Filesystem\Filesystem"/>
     <service id="file_locator" class="Symfony\Component\HttpKernel\Config\FileLocator">
       <argument type="service" id="kernel"/>
-      <argument>/var/www/html/Salon-modif/app/Resources</argument>
+      <argument>/var/www/html/Modif/app/Resources</argument>
     </service>
     <service id="uri_signer" class="Symfony\Component\HttpKernel\UriSigner">
       <argument>ThisTokenIsNotSoSecretChangeIt</argument>
@@ -636,7 +636,7 @@
         </argument>
       </argument>
       <argument type="collection">
-        <argument key="cache_dir">/var/www/html/Salon-modif/var/cache/dev/translations</argument>
+        <argument key="cache_dir">/var/www/html/Modif/var/cache/dev/translations</argument>
         <argument key="debug">true</argument>
       </argument>
       <argument type="collection"/>
@@ -823,19 +823,19 @@
     </service>
     <service id="cache.app" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
       <tag name="cache.pool"/>
-      <argument>waSJiu0SAB</argument>
+      <argument>1WWDZioF4J</argument>
       <argument>0</argument>
-      <argument>/var/www/html/Salon-modif/var/cache/dev/pools</argument>
+      <argument>/var/www/html/Modif/var/cache/dev/pools</argument>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
     </service>
     <service id="cache.system" class="Symfony\Component\Cache\Adapter\AdapterInterface">
       <tag name="cache.pool"/>
-      <argument>GJkNxQRxte</argument>
+      <argument>NznZe-8G7h</argument>
       <argument>0</argument>
-      <argument>2LB0TQQHYHdLaNUIbT-fRQ</argument>
-      <argument>/var/www/html/Salon-modif/var/cache/dev/pools</argument>
+      <argument>UYVrEg6NQ+BPgNBbTRcQOp</argument>
+      <argument>/var/www/html/Modif/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -1091,7 +1091,7 @@
     <service id="templating.filename_parser" class="Symfony\Bundle\FrameworkBundle\Templating\TemplateFilenameParser"/>
     <service id="templating.locator" class="Symfony\Bundle\FrameworkBundle\Templating\Loader\TemplateLocator" public="false">
       <argument type="service" id="file_locator"/>
-      <argument>/var/www/html/Salon-modif/var/cache/dev</argument>
+      <argument>/var/www/html/Modif/var/cache/dev</argument>
     </service>
     <service id="validator" class="Symfony\Component\Validator\Validator\ValidatorInterface">
       <factory service="validator.builder" method="getValidator"/>
@@ -1121,7 +1121,7 @@
       </call>
       <call method="addXmlMappings">
         <argument type="collection">
-          <argument>/var/www/html/Salon-modif/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/config/validation.xml</argument>
+          <argument>/var/www/html/Modif/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/config/validation.xml</argument>
         </argument>
       </call>
       <call method="enableAnnotationMapping">
@@ -1153,7 +1153,7 @@
       <tag name="monolog.logger" channel="profiler"/>
       <argument type="service">
         <service class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage" public="false">
-          <argument>file:/var/www/html/Salon-modif/var/cache/dev/profiler</argument>
+          <argument>file:/var/www/html/Modif/var/cache/dev/profiler</argument>
         </service>
       </argument>
       <argument type="service" id="monolog.logger.profiler" on-invalid="null"/>
@@ -1579,7 +1579,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>5834d43fc90096.85379376</argument>
+            <argument>584c3d32a94098.17041691</argument>
           </service>
         </argument>
       </argument>
@@ -1856,7 +1856,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>5834d43fc90096.85379376</argument>
+            <argument>584c3d32a94098.17041691</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -1927,7 +1927,7 @@
           <argument>form_div_layout.html.twig</argument>
         </argument>
         <argument key="autoescape">name</argument>
-        <argument key="cache">/var/www/html/Salon-modif/var/cache/dev/twig</argument>
+        <argument key="cache">/var/www/html/Modif/var/cache/dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="paths" type="collection"/>
         <argument key="date" type="collection">
@@ -1987,7 +1987,7 @@
           <service class="Symfony\Bridge\Twig\Extension\CodeExtension" public="false">
             <tag name="twig.extension"/>
             <argument>null</argument>
-            <argument>/var/www/html/Salon-modif/app</argument>
+            <argument>/var/www/html/Modif/app</argument>
             <argument>UTF-8</argument>
           </service>
         </argument>
@@ -2139,7 +2139,7 @@
     </service>
     <service id="monolog.processor.psr_log_message" class="Monolog\Processor\PsrLogMessageProcessor" public="false"/>
     <service id="monolog.handler.main" class="Monolog\Handler\StreamHandler">
-      <argument>/var/www/html/Salon-modif/var/logs/dev.log</argument>
+      <argument>/var/www/html/Modif/var/logs/dev.log</argument>
       <argument>100</argument>
       <argument>true</argument>
       <argument>null</argument>
@@ -2190,7 +2190,7 @@
         <argument key="port">null</argument>
         <argument key="dbname">salon_the</argument>
         <argument key="user">root</argument>
-        <argument key="password">root</argument>
+        <argument key="password">null</argument>
         <argument key="charset">UTF8</argument>
         <argument key="driverOptions" type="collection"/>
         <argument key="defaultTableOptions" type="collection"/>
@@ -2249,17 +2249,17 @@
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_metadata_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_7b7858d42628c26de135cfff4ddbcc6b450168836dd60752cf0f07a7becda4c0</argument>
+        <argument>sf2orm_default_17e4de707cbc139a934588031a97abdccc55ccf393db5ac3691ee262b00a6a51</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_result_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_7b7858d42628c26de135cfff4ddbcc6b450168836dd60752cf0f07a7becda4c0</argument>
+        <argument>sf2orm_default_17e4de707cbc139a934588031a97abdccc55ccf393db5ac3691ee262b00a6a51</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_query_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_7b7858d42628c26de135cfff4ddbcc6b450168836dd60752cf0f07a7becda4c0</argument>
+        <argument>sf2orm_default_17e4de707cbc139a934588031a97abdccc55ccf393db5ac3691ee262b00a6a51</argument>
       </call>
     </service>
     <service id="doctrine.orm.default_entity_listener_resolver" class="Doctrine\ORM\Mapping\DefaultEntityListenerResolver"/>
@@ -2296,7 +2296,7 @@
                     <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                       <argument type="service" id="annotation_reader"/>
                       <argument type="collection">
-                        <argument>/var/www/html/Salon-modif/src/AdminBundle/Entity</argument>
+                        <argument>/var/www/html/Modif/src/AdminBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -2306,7 +2306,7 @@
             </argument>
           </call>
           <call method="setProxyDir">
-            <argument>/var/www/html/Salon-modif/var/cache/dev/doctrine/orm/Proxies</argument>
+            <argument>/var/www/html/Modif/var/cache/dev/doctrine/orm/Proxies</argument>
           </call>
           <call method="setProxyNamespace">
             <argument>Proxies</argument>
@@ -2521,6 +2521,9 @@
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
       </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.debug"/>
+      </call>
     </service>
     <service id="monolog.logger.translation" class="Symfony\Bridge\Monolog\Logger">
       <argument>translation</argument>
@@ -2529,6 +2532,9 @@
       </call>
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
+      </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.debug"/>
       </call>
     </service>
     <service id="monolog.logger.cache" class="Symfony\Bridge\Monolog\Logger">
@@ -2539,6 +2545,9 @@
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
       </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.debug"/>
+      </call>
     </service>
     <service id="monolog.logger.templating" class="Symfony\Bridge\Monolog\Logger">
       <argument>templating</argument>
@@ -2547,6 +2556,9 @@
       </call>
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
+      </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.debug"/>
       </call>
     </service>
     <service id="monolog.logger.profiler" class="Symfony\Bridge\Monolog\Logger">
@@ -2557,6 +2569,9 @@
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
       </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.debug"/>
+      </call>
     </service>
     <service id="monolog.logger.router" class="Symfony\Bridge\Monolog\Logger">
       <argument>router</argument>
@@ -2565,6 +2580,9 @@
       </call>
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
+      </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.debug"/>
       </call>
     </service>
     <service id="monolog.logger.php" class="Symfony\Bridge\Monolog\Logger">
@@ -2575,11 +2593,14 @@
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
       </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.debug"/>
+      </call>
     </service>
     <service id="monolog.logger.event" class="Symfony\Bridge\Monolog\Logger">
       <argument>event</argument>
       <call method="pushHandler">
-        <argument type="service" id="monolog.handler.null_internal"/>
+        <argument type="service" id="monolog.handler.debug"/>
       </call>
     </service>
     <service id="monolog.logger.security" class="Symfony\Bridge\Monolog\Logger">
@@ -2590,21 +2611,31 @@
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
       </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.debug"/>
+      </call>
     </service>
     <service id="monolog.logger.doctrine" class="Symfony\Bridge\Monolog\Logger">
       <argument>doctrine</argument>
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
       </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.debug"/>
+      </call>
+    </service>
+    <service id="monolog.handler.debug" class="Symfony\Bridge\Monolog\Handler\DebugHandler">
+      <argument>100</argument>
+      <argument>true</argument>
     </service>
     <service id="monolog.handler.null_internal" class="Monolog\Handler\NullHandler"/>
     <service id="session.storage.filesystem" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorage">
-      <argument>/var/www/html/Salon-modif/var/cache/dev/sessions</argument>
+      <argument>/var/www/html/Modif/var/cache/dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service" id="session.storage.metadata_bag"/>
     </service>
     <service id="session.handler" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler">
-      <argument>/var/www/html/Salon-modif/app/../var/sessions/dev</argument>
+      <argument>/var/www/html/Modif/app/../var/sessions/dev</argument>
     </service>
     <service id="templating.loader" class="Symfony\Bundle\FrameworkBundle\Templating\Loader\FilesystemLoader">
       <argument type="service" id="templating.locator"/>
@@ -2623,9 +2654,9 @@
     <service id="router" class="Symfony\Bundle\FrameworkBundle\Routing\Router">
       <tag name="monolog.logger" channel="router"/>
       <argument type="service" id="service_container"/>
-      <argument>/var/www/html/Salon-modif/app/config/routing_dev.yml</argument>
+      <argument>/var/www/html/Modif/app/config/routing_dev.yml</argument>
       <argument type="collection">
-        <argument key="cache_dir">/var/www/html/Salon-modif/var/cache/dev</argument>
+        <argument key="cache_dir">/var/www/html/Modif/var/cache/dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
         <argument key="generator_base_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
@@ -2651,7 +2682,7 @@
       </argument>
       <argument type="service">
         <service class="Doctrine\Common\Cache\FilesystemCache" public="false">
-          <argument>/var/www/html/Salon-modif/var/cache/dev/annotations</argument>
+          <argument>/var/www/html/Modif/var/cache/dev/annotations</argument>
         </service>
       </argument>
       <argument>true</argument>
@@ -2682,46 +2713,46 @@
       <argument type="service" id="templating.locator"/>
       <argument type="service" id="templating.name_parser"/>
       <call method="addPath">
-        <argument>/var/www/html/Salon-modif/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views</argument>
+        <argument>/var/www/html/Modif/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views</argument>
         <argument>Framework</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/Salon-modif/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views</argument>
+        <argument>/var/www/html/Modif/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views</argument>
         <argument>Security</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/Salon-modif/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views</argument>
+        <argument>/var/www/html/Modif/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views</argument>
         <argument>Twig</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/Salon-modif/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
+        <argument>/var/www/html/Modif/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
         <argument>Swiftmailer</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/Salon-modif/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>/var/www/html/Modif/vendor/doctrine/doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/Salon-modif/src/SiteInternetBundle/Resources/views</argument>
+        <argument>/var/www/html/Modif/src/SiteInternetBundle/Resources/views</argument>
         <argument>SiteInternet</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/Salon-modif/src/AdminBundle/Resources/views</argument>
+        <argument>/var/www/html/Modif/src/AdminBundle/Resources/views</argument>
         <argument>Admin</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/Salon-modif/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
+        <argument>/var/www/html/Modif/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
         <argument>Debug</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/Salon-modif/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>
+        <argument>/var/www/html/Modif/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>
         <argument>WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/Salon-modif/app/Resources/views</argument>
+        <argument>/var/www/html/Modif/app/Resources/views</argument>
       </call>
       <call method="addPath">
-        <argument>/var/www/html/Salon-modif/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form</argument>
+        <argument>/var/www/html/Modif/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form</argument>
       </call>
     </service>
     <service id="logger" class="Symfony\Bridge\Monolog\Logger">
@@ -2734,6 +2765,9 @@
       </call>
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
+      </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.debug"/>
       </call>
       <autowiring-type>Psr\Log\LoggerInterface</autowiring-type>
     </service>
